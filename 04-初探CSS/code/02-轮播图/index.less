@@ -1,0 +1,58 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  .center;
+  background: linear-gradient(45deg, blue, green);
+}
+.banner {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  .inner {
+    width: 3600px;
+    animation: turn 10s infinite 2s alternate;
+    .slider {
+      float: left;
+      img {
+        width: 600px;
+      }
+    }
+  }
+}
+
+@keyframes turn {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(-600px);
+  }
+  30% {
+    transform: translateX(-600px);
+  }
+  40% {
+    transform: translateX(-1200px);
+  }
+  50% {
+    transform: translateX(-1200px);
+  }
+  60% {
+    transform: translateX(-1800px);
+  }
+  70% {
+    transform: translateX(-1800px);
+  }
+  80% {
+    transform: translateX(-2400px);
+  }
+  90% {
+    transform: translateX(-2400px);
+  }
+}

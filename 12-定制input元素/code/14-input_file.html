@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo of input type file</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <form action="http://titan.com/form">
+      <input type="hidden" name="recodeID" value="123456" />
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        name="Andy"
+        id="name"
+        placeholder="Please insert your name"
+      /><br />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        checked
+        name="password"
+        id="password"
+        value="password"
+        placeholder="Min 6 character"
+      /><br />
+      <label for="fave">Fruit:</label>
+      <input type="text" name="fave" id="fave" value="apples" /><br />
+      <label for="file">File:</label>
+      <input type="file" name="filedata" id="file" /><br />
+      <input type="submit" value="Submit Vote" />
+    </form>
+  </body>
+</html>

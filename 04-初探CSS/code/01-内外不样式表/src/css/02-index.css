@@ -1,0 +1,13 @@
+
+article {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card h1 {
+	text-align: center;
+}
+.card img {
+	width: 260px;
+}

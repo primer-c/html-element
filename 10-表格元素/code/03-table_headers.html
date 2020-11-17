@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo of th</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <style>
+      header th,
+      tfoot th {
+        text-align: left;
+        background: gray;
+        color: white;
+      }
+      tbody th {
+        text-align: right;
+        background: lightgray;
+        color: gray;
+      }
+      thead [colspan],
+      tfoot [colspan] {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th id="rank">Rank</th>
+        <th id="name">Name</th>
+        <th id="color">Color</th>
+        <th id="sizeAndVotes" colspan="2">Size & Votes</th>
+      </tr>
+      <tr>
+        <th id="first" headers="rank">Favorite:</th>
+        <td headers="name first">Apples</td>
+        <td header="color first">Green</td>
+        <td header="sizeAndVotes first">Medium</td>
+        <td headers="sizeAndVotes first">500</td>
+      </tr>
+      <tr>
+        <th id="second" headers="rank">2nd Favorite:</th>
+        <td headers="name second">Oranges</td>
+        <td headers="color second">Orange</td>
+        <td headers="sizeAndVotes second">Large</td>
+        <td headers="sizeAndVotes second">450</td>
+      </tr>
+      <tr>
+        <th id="third" headers="rank">3rd Favorite:</th>
+        <td headers="name third">Pomegranate</td>
+        <td headers="color third">Red</td>
+        <td headers="sizeAndVotes third">Large</td>
+        <td headers="sizeAndVotes third">400</td>
+      </tr>
+    </table>
+  </body>
+</html>

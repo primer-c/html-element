@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo of input type range</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <form action="http://titan.com/form">
+      <label for="name">Name:</label>
+      <input type="text" name="Andy" id="name" /><br />
+      <label for="fave">Fruit:</label>
+      <input type="text" name="fave" id="fave" value="Apples" /><br />
+      <label for="price">$ per unit in your area:</label>
+      <input
+        type="range"
+        name="price"
+        id="price"
+        min="0"
+        max="100"
+        step="1"
+        value="1"
+      /><br />
+      <input type="submit" value="Submit Vote" />
+    </form>
+  </body>
+</html>

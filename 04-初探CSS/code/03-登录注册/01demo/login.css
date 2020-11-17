@@ -1,0 +1,74 @@
+body {
+			margin: 0;
+			padding: 0;
+			font-family: microsoft yahei sans serif;
+			background: url("images/timg.jpg");
+			-webkit-background-size: ;
+			background-size: cover;
+		}
+		.box {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background: rgba(0,0,0,0.8);
+			box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+			width: 450px;
+			color: #fff;
+			box-sizing: border-box;
+			border-radius: 6px;
+			padding: 50px;
+		}
+		.box h2 {
+			margin: 0 0 30px 0;
+			padding: 0;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.box .input {
+			position: relative;
+		}
+
+		.box .input input {
+			width: 100%;
+			padding: 10px 0;
+			margin-bottom: 30px;
+			border: none;
+			border-bottom: 1px solid #fff;
+			outline: none;
+			color: #fff;
+			font-size: 16px;
+			letter-spacing: 1px;
+			background: transparent;
+		}
+
+		.box .input label {
+			position: absolute;
+			top: 8px;
+			left: 0;
+			font-size: 16px;
+			pointer-events: none;
+			letter-spacing: 1px;
+			transition: 0.5s
+		}
+		.box .input input:focus ~ label,
+		.box .input input:valid ~ label {
+			top: -18px;
+			left: 0;
+			color: #999;
+			font-size: 12px;
+		}
+		.box input[type="submit"]{
+			width: 100%;
+			border-radius: 4px;
+			background: rgba(0,100,0,0.8);
+			box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+			border: none;
+			outline: none;
+			color: #fff;
+			cursor: pointer;
+			padding: 10px 0;
+		}
+		.box input[type="submit"]:active {
+			transition: .8s
+		}

@@ -1,0 +1,47 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, blue, green);
+}
+.banner {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+}
+.banner .inner {
+  width: 3600px;
+  animation: turn 10s infinite 2s;
+}
+.banner .inner .slider {
+  float: left;
+}
+.banner .inner .slider img {
+  width: 600px;
+}
+@keyframes turn {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-600px);
+  }
+  40% {
+    transform: translateX(-1200px);
+  }
+  60% {
+    transform: translateX(-1800px);
+  }
+  80% {
+    transform: translateX(-2400px);
+  }
+  100% {
+    transform: translateX(-3000px);
+  }
+}

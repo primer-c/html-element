@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo of form http</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+    <base href="http://titan:5000" />
+  </head>
+  <body>
+    <form action="/login" method="post">
+      <fieldset>
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" />
+        </p>
+        <p>
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city" />
+        </p>
+      </fieldset>
+      <fieldset>
+        <p>
+          <label for="fave1">#1:</label>
+          <input type="text" name="fave1" id="fave1" />
+        </p>
+        <p>
+          <label for="fave2">#2:</label>
+          <input type="text" name="fave2" id="fave2" />
+        </p>
+        <p>
+          <label for="fave3">#3:</label>
+          <input type="text" name="fave3" id="fave3" />
+        </p>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

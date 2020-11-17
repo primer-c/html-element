@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 的颜色</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+      .container {
+        width: 80%;
+        height: 80%;
+        background: #690;
+      }
+      div {
+        margin: 10px;
+        float: left;
+      }
+      .one {
+        width: 200px;
+        height: 200px;
+        background: red;
+      }
+      .two {
+        width: 10em;
+        height: 10em;
+        font-size: 1.5rem;
+        background: #00ff00;
+      }
+      .three {
+        width: 10rem;
+        height: 10rem;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .four {
+        background: hsla(120, 100%, 50%, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one"></div>
+      <div class="two">Hello</div>
+      <div class="three"></div>
+      <div class="four"></div>
+    </div>
+  </body>
+</html>

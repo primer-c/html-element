@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Demo for class</title>
+	<style>
+		.apress {
+			padding: 5px;
+			margin: 2px;
+			color: white;
+			background: #aaa;
+		}
+		.apple { 
+			font-size: x-large;
+			display: block;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<a href="https://apress.com" class="apress">Apress web site</a>
+	<a href="https://apple.com" class="apple add">Apple web site</a>
+	<script>
+		let add = document.querySelector('.add')
+		add.style.border = "thin solid black"
+		add.style.background = "red"
+		add.style.color = "white"
+	</script>
+</body>
+</html>

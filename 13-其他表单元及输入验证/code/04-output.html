@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo of output</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <form
+      onsubmit="return false"
+      oninput="res.value=quant.valueAsNumber*price.valueAsNumber"
+    >
+      <fieldset>
+        <legend>Price Caculator</legend>
+        <input type="number" placeholder="Quantity" id="quant" name="quant" />
+        <input type="number" placeholder="Price" id="price" name="price" />
+        <output for="quant name" name="res" />
+      </fieldset>
+    </form>
+  </body>
+</html>
