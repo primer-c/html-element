@@ -1,0 +1,50 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-shadow {
+  box-shadow: 1px 2px 6px rgba(0,0,0,.5);
+}
+#app {
+  min-height: 100vh;
+  .center;
+  .poet {
+    width: 200px;
+    .box-shadow;
+    padding: 15px;
+    .header {
+      .center;
+      h3 {
+        text-align: center;
+      }
+    }
+    .banner {
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      font-size: 14px;
+      dl {
+        dt {
+          h4 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .footer {
+      float: right;
+      margin-right: 10px;
+      font-size: 12px;
+      span {
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #00f;
+      }
+    }
+  }
+}

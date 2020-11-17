@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<title>Demo of div element with Vue</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="../assert/css/2.0-div.css"/>
+		<script src="../assert/js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="poet">
+				<div class="header">
+					<h3>{{title}}</h3>
+					<p>{{author}}</p>
+				</div>
+				<div class="banner">
+					<img :src="img" alt="#">
+				</div>
+				<div class="content">
+					<p>{{poet}}</p>
+				</div>
+				<div class="footer"><span>友情链接&nbsp</span><a :href="link">竹里馆</a></div>
+			</div>
+		</div>
+		<script>
+		 const vm = new Vue({
+			el: "#app",
+			data: {
+				title: "竹里馆",
+				author: "王维",
+				poet: "独坐幽篁里 弹琴复长啸 深林人不知 明月来相照",
+				img: "../assert/imgs/photo1.jpg",
+				link: "https://hanyu.baidu.com/shici/detail?pid=6ae97533871d499b80790d2732ebd4bf&from=kg0"
+			},
+		});
+		</script>
+	</body>
+</html>

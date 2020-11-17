@@ -1,0 +1,47 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@border: 1px solid #333;
+@bg: #00f;
+@color: #fff;
+#app {
+  min-height: 100vh;
+  .center;
+  table {
+    width: 600px;
+    text-align: center;
+    border-collapse: collapse;
+    thead {
+      tr {
+        line-height: 28px;
+        th {
+          border: @border;
+          background: @bg;
+          color: @color;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          border: @border;
+          a {
+            padding: 10px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    tfoot {
+      tr {
+        td {
+          border: @border;
+          background: @bg;
+          color: @color;
+        }
+      }
+    }
+  }
+}

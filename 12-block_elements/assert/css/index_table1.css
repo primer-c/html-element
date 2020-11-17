@@ -1,0 +1,37 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app table {
+  width: 600px;
+  text-align: center;
+  border-collapse: collapse;
+}
+#app table thead tr {
+  line-height: 28px;
+}
+#app table thead tr th {
+  border: 1px solid #333;
+  background: #00f;
+  color: #fff;
+}
+#app table tbody tr td {
+  border: 1px solid #333;
+}
+#app table tbody tr td a {
+  padding: 10px;
+  text-decoration: none;
+}
+#app table tfoot tr td {
+  border: 1px solid #333;
+  background: #00f;
+  color: #fff;
+}
+/*# sourceMappingURL=./index_table1.css.map */

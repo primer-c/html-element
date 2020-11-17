@@ -1,0 +1,43 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-shadow {
+  box-shadow: 1px 2px 6px rgba(0,0,0,.5);
+}
+@border: 1px solid #333;
+#app {
+  min-height: 100vh;
+  .center;
+  table {
+    width: 600px;
+    .box-shadow;
+    border-collapse: collapse;
+    caption {
+      font-size: 26px;
+    }
+    thead {
+      tr {
+        th {
+          background: #00f;
+          color: #fff;
+          border: @border;
+        }
+      }
+    }
+    tbody {
+      tr{
+        th {
+          background: green;
+          color: #fff;
+          border: @border;
+        }
+        td {
+          border: @border;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

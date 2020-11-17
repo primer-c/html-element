@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<title>Demo of ol element with Vue</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/index_ol.css"/>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="poet">
+				<div class="header">
+					<h3>{{title}}</h3>
+				</div>
+				<div class="banner">
+					<img :src="img" alt="#">
+				</div>
+				<ol class="content" start="5">
+					<li>{{poet1}}</li>
+					<li>{{poet2}}</li>
+					<li>{{poet3}}</li>
+					<li>{{poet4}}</li>
+				</ol>
+				<div class="footer"><span>友情链接</span><a :href="link">{{about}}</a></div>
+			</div>
+			<div class="poet">
+				<div class="header">
+					<h3>{{title}}</h3>
+				</div>
+				<div class="banner">
+					<img :src="img" alt="#">
+				</div>
+				<ol class="content" reversed>
+					<li>{{poet1}}</li>
+					<li>{{poet2}}</li>
+					<li>{{poet3}}</li>
+					<li>{{poet4}}</li>
+				</ol>
+				<div class="footer"><span>友情链接</span><a :href="link">{{about}}</a></div>
+			</div>
+			<div class="poet">
+				<div class="header">
+					<h3>{{title}}</h3>
+				</div>
+				<div class="banner">
+					<img :src="img" alt="#">
+				</div>
+				<ol class="content" type="I">
+					<li>{{poet1}}</li>
+					<li>{{poet2}}</li>
+					<li>{{poet3}}</li>
+					<li>{{poet4}}</li>
+				</ol>
+				<div class="footer"><span>友情链接</span><a :href="link">{{about}}</a></div>
+			</div>
+		</div>
+		<script>
+		 const vm = new Vue({
+			el: "#app",
+			data: {
+				title: "唐诗名句选",
+				poet1: "独坐幽篁里 弹琴复长啸 深林人不知 明月来相照",
+				poet2: "君不见黄河之水天上来 奔流到海不复回",
+				poet3: "君不见高堂明镜悲白发 朝如青丝暮成雪",
+				poet4: "秦时明月汉时关 万里长征人未还",
+				img: "imgs/photo1.jpg",
+				link: "https://www.shicimingju.com/shicimark/tangshisanbaishou.html",
+				about: "唐诗三百首"
+			},
+		});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<title>Demo of table with Vue</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/index_table1.css"/>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<table>
+				<caption><h4>Student Score</h4></caption>
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>Chinese</th>
+						<th>English</th>
+						<th>Math</th>
+						<th>Geography</th>
+						<th>Histry</th>
+						<th>Operat</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr v-for="item in list">
+						<td>{{item.id}}</td>
+						<td>{{item.name}}</td>
+						<td>{{item.chinese}}</td>
+						<td>{{item.english}}</td>
+						<td>{{item.math}}</td>
+						<td>{{item.geography}}</td>
+						<td>{{item.histry}}</td>
+						<td><a href="#">Delete</a><a href="#">Edit</a></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+		<script>
+			const vm = new Vue({
+				el: "#app",
+				data: {
+					list: [
+						{id: 1,name: "Andy",chinese: 90,english: 98,math: 100, geography: 90,histry: 90},
+						{id: 2,name: "Tomas",chinese: 80,english: 100,math: 90, geography: 99,histry: 100},
+						{id: 3,name: "Trump",chinese: 92,english: 100,math: 98, geography: 94,histry: 98},
+						{id: 4,name: "Baiden",chinese: 88,english: 96,math: 94, geography: 88,histry: 96},
+						{id: 5,name: "Charlse",chinese: 96,english: 94,math: 96, geography: 90,histry: 100},
+						{id: 6,name: "Alex",chinese: 86,english: 90,math: 08, geography: 82,histry: 90},
+					]
+				}
+			});
+		</script>
+	</body>
+</html>

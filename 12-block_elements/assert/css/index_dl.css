@@ -1,0 +1,49 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-shadow {
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+}
+#app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app .poet {
+  width: 200px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+}
+#app .poet .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app .poet .header h3 {
+  text-align: center;
+}
+#app .poet .banner img {
+  width: 100%;
+}
+#app .poet .content {
+  font-size: 14px;
+}
+#app .poet .content dl dt h4 {
+  font-size: 12px;
+}
+#app .poet .footer {
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+}
+#app .poet .footer span {
+  padding: 10px;
+}
+#app .poet .footer a {
+  text-decoration: none;
+  color: #00f;
+}
+/*# sourceMappingURL=./index_dl.css.map */

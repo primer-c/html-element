@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Demo for tabindex</title>
+</head>
+<body>
+	<form action="http://localhost:5000/user">
+			 <label for="username">用户名</label>
+			 <!-- Tab -->
+			 <input type="text" name="username" id="username" tabindex="2"/><br>
+			 <label for="password">密码</label>
+			 <!-- Tab -->
+			 <input type="text" name="password" id="password" tabindex="1"/><br>
+			 <label for="confirm">确认</label>
+			  <!-- Tab 不被选中-->
+			 <input type="text" name="confirm" id="confirm" tabindex="-1"/><br>
+			 <input type="submit" value="Login"/>
+	</form>
+</body>
+</html>

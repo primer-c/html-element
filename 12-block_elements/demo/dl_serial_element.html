@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<title>Demo of div element with Vue</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" href="css/index_dl.css"/>
+		<script src="js/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="poet">
+				<div class="header">
+					<h3>{{title}}</h3>
+				</div>
+				<div class="banner">
+					<img :src="img" alt="#">
+				</div>
+				<div class="content">
+					<dl class="dl">
+						<dt><h4>{{title1}}</h4></dt>
+						<dd>{{content1}}</dd>
+					</dl>
+					<dl class="dl">
+						<dt><h4>{{title2}}</h4></dt>
+						<dd>{{content2}}</dd>
+					</dl>
+					<dl class="dl">
+						<dt><h4>{{title3}}</h4></dt>
+						<dd>{{content3}}</dd>
+					</dl>
+				</div>
+				
+				<div class="footer"><span>友情链接</span><a :href="link">竹里馆</a></div>
+			</div>
+		</div>
+		<script>
+		 const vm = new Vue({
+			el: "#app",
+			data: {
+				title: "唐诗名句选",
+				title1: "滕王阁序",
+				content1: "渔舟晚唱 响穷彭蠡之滨 雁阵惊寒 声断衡阳之浦",
+				title2: "春晓",
+				content2: "春眠不觉晓 处处闻啼鸟 夜来风雨声 花落知多少",
+				title3: "竹馆里",
+				content3: "独坐幽篁里 弹琴复长啸 深林人不知 明月来相照",
+				img: "imgs/photo1.jpg",
+				link: "https://www.shicimingju.com/shicimark/tangshisanbaishou.html",
+				about: "唐诗三百首"},
+		});
+		</script>
+	</body>
+</html>

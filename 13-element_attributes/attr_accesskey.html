@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Demo for accesskey</title>
+</head>
+<body>
+	 <form action="http://localhost:5000/user">
+		 <label for="username">用户名</label>
+		 <!-- Alt + n -->
+		 <input type="text" name="username" id="username" accesskey="n"/><br>
+		 <label for="password">密码</label>
+		 <!-- Alt + p -->
+		 <input type="text" name="password" id="password" accesskey="p"/><br>
+		 <label for="confirm">确认</label>
+		  <!-- Alt + c -->
+		 <input type="text" name="confirm" id="confirm" accesskey="c"/><br>
+		  <!-- Alt + s -->
+		 <input type="submit" value="Login" accesskey="s"/>
+	 </form>
+</body>
+</html>

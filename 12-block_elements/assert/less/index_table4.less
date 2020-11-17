@@ -1,0 +1,21 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@border: 1px solid #333;
+td {
+  border: @border;
+}
+th {
+  border: @border;
+}
+body {
+  .center;
+  min-height: 100vh;
+  table {
+    width: 600px;
+    border-collapse: collapse;
+    text-align: center;
+  }
+}

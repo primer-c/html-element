@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="shortcut icon" href="../assert/imgs/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="../assert/css/1-h_series.css"/>
+    <script src="../assert/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header><h3>h1 ~ h6 elements</h3></header>
+      <img src="../assert/imgs/photo1.jpg" alt="">
+      <h1>{{poet}}</h1>
+      <h2>{{poet}}</h2>
+      <h3>{{poet}}</h3>
+      <h4>{{poet}}</h4>
+      <h5>{{poet}}</h5>
+      <h6>{{poet}}</h6>
+    </div>
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          poet: "落霞与孤鹜齐飞 秋水共长天一色"
+        }
+      })
+    </script>
+  </body>
+</html>

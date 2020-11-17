@@ -1,0 +1,23 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+td {
+  border: 1px solid #333;
+}
+th {
+  border: 1px solid #333;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+body table {
+  width: 600px;
+  border-collapse: collapse;
+  text-align: center;
+}
+/*# sourceMappingURL=./index_table4.css.map */

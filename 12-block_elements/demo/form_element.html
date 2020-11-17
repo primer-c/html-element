@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Form Demo</title>
+		<base href="http://localhost:3000/api">
+	</head>
+	<body>
+		<form action="/register">
+			<label for="name">姓名</label>
+			<input type="text" id="name" name="name" placeholder="Please insert your name" required style="width: 600px;height: 26px"><br>
+			<label for="email">邮箱</label>
+			<input type="text" name="email" id="email" placeholder="Please insert youer email" required style="width: 600px;height: 26px"><br>
+			<label for="password">密码</label>
+			<input type="password" name="password" id="password" placeholder="Please insert youer password" required style="width: 600px;height: 26px"><br>
+			<label for="confirm">确认</label>
+			<input type="confirm" name="confirm" id="confirm" placeholder="Please insert youer confirm" required style="width: 600px;height: 26px"><br>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>

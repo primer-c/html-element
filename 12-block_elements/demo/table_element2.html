@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/index_table2.css"/>
+    <script src="js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+    <table>
+      <caption>Favorite Fruit</caption>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Color</th>
+          <th>Size</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="item in fruits">
+          <th>{{item.rank}}</th>
+          <td>{{item.name}}</td>
+          <td>{{item.color}}</td>
+          <td>{{item.size}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <script>
+      const vm = new Vue({
+        el: "#app",
+        data: {
+          fruits: [
+            {rank: "Favorite",name: "Oranges",color: "Orange",size: "Large"},
+            {rank: "2nd Favorite",name: "Apple",color: "Red",size: "Medium"},
+            {rank: "3th Favorite", name: "Pomegranate",color: "Green-Red",size:""}
+          ]        
+        },
+      });
+    </script>
+  </body>
+</html>
